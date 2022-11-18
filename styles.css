@@ -7,12 +7,12 @@
     width: 375.48px;
     /* height: 580px; */
     height: auto;
-    padding-bottom: 350px;
+    padding-bottom: 400px;
     /* display: none; */
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .btn {
