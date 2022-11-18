@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mobile" id="mob">
+            <div class="catlogo">
+                <img src="/pics/cat.png" alt="">
+            </div>
+
+            <div class="today">
+                <p>Today</p>
+            </div>
+
+            <div id="hide" class="hide">
+                <button id="hideText" onclick="dltfun()">
+                Hide Completed
+                </button>
+            </div>
+
+
+            <section id="textus" style="display:block">
+                <!-- <div class="lorem">
+                    <input type="checkbox" id="Checkme" onclick="myFun3()">
+                    <p id="output1">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> </p>
+                </div>
+                <div class="small">
+                    <span id="output2"> 12: 49am </span>
+                </div> -->
+            </section>
+
+            <!-- <div class="lorem">
+                <input type="checkbox" checked id="cb1">
+                <p id="opa">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span> 12: 49am </span></p>
+            </div> -->
+
+
+            <div class="tom">
+                <p>Tomorrow</p>
+            </div>
+
+            <div class="list" id="anylist">
+                <ul>
+                    <li>
+                        <p id="output-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> </p>
+                    </li>
+                    <div id="output-6"> 12: 49am </div>
+                </ul>
+            </div>
+
+            <div class="btn">
+
+
+                <button onclick="myFunction()"><img src="/pics/Left Icon.png" alt=""></button>
+            </div>
+
+        </div>
+
+
+        <!-- //Next Page -->
+        <div class="task2" id="demo">
+            <div class="closetask">
+                <div class="close">
+                    &lt;<button onclick="closeFun()"><span>Close</span></button>
+                    <p>Task</p>
+                </div>
+
+            </div>
+
+
+            <div class="plustask">
+                <p>Add a task</p>
+            </div>
+
+
+            <div class="result">
+                <div class="name">
+                    <span>Name</span>
+                    <div class="weak">
+                        <!-- <p>Lorem Ipsum Dolor</p> -->
+                        <input type="text" id="myInput" placeholder="Lorem Ipsum Dolor" name="add">
+                    </div>
+                </div>
+
+                <div class="hour">
+                    <span>Hour</span>
+                    <input id="myTime" type="time" value="" name="time">
+
+
+                </div>
+
+                <div class="tog">
+                    <span>Today</span>
+                    <label class="switch">
+                        <input type="checkbox" checked id="notog" onclick="togfun()">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+            </div>
+
+            <button type="button" onclick="getInputValue();" class="done" id="btn1">
+                 <p>Done</p>
+            </button>
+
+
+            <div class="footer">
+                If you disable today, the task will be considered as tomorrow
+            </div>
+
+            <div class="black">
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="task.js"></script>
+
+</body>
+
+
+</html>
