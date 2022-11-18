@@ -2,7 +2,7 @@
     background: #F7F8FA;
     position: relative;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 30px;
     width: 375.48px;
     /* height: 580px; */
@@ -149,7 +149,7 @@
     position: relative;
     margin: auto;
     display: none;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 30px;
     width: 375.48px;
     /* height: 580px; */
