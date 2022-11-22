@@ -50,8 +50,6 @@ function displayTasks() {
         alert("Please Enter some data");
         return false;
     }
-    return true;
-
 
     this.tasks.map((task) => {
         // var listDiv = document.getElementById('textus');
@@ -78,6 +76,11 @@ function displayTasks() {
             return text.innerHTML += code;
         })
     })
+
+
+
+
+
 }
 
 
