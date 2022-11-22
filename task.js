@@ -10,13 +10,10 @@ var id = 0;
 var task = document.getElementById("demo");
 
 
-togfun = () => {
+var togfun = () => {
     var checkBox = document.getElementById("notog");
 
-    if (checkBox.checked == true) {
-        out1.style.display = "none";
-        out2.style.display = "none";
-    } else {
+    if (checkBox.checked == false) {
         out5.innerHTML = txt1.value;
         out6.innerHTML = txt2.value;
     }
@@ -49,6 +46,13 @@ function getInputValue() {
 }
 
 function displayTasks() {
+    if (txt1.value.length == 0) {
+        alert("Please Enter some data");
+        return false;
+    }
+    return true;
+
+
     this.tasks.map((task) => {
         // var listDiv = document.getElementById('textus');
         var text = document.getElementById("textus");
@@ -107,7 +111,7 @@ closeFun = () => {
 
 //To check uncheck the radio
 function myFun3(id) {
-    // alert(id);
+    alert("are u sure you want to check the box");
     var checkBox = document.getElementById("Checkme-" + id);
     // var checkBoxId = checkBox.getAttribute('value');
     var text = document.getElementById("text-" + id);
@@ -146,24 +150,4 @@ function dltfun() {
     }
 
     this.displayTasks();
-    // var task_id = this.tasks.filter((task) => {
-    //     if (task.completed = true) {
-    //         return task.id;
-    //     }
-    //     var text = document.getElementById("textus-" + task_id);
-    //     text.style.display = "none";
-    // });
-    // var checkBox = document.getElementById("Checkme");
-
-    // var opac = document.getElementById("opa")
-    // var checkb = document.getElementById("cb1")
-    // if (checkBox.checked == true) {
-
-    //     opac.style.display = "none";
-    //     cb1.style.display = "none";
-    // } else {
-    //     text.style.display = "block";
-    //     opac.style.display = "block";
-    //     cb1.style.display = "block";
-    // }
 }

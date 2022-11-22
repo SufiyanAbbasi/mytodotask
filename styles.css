@@ -7,7 +7,8 @@
     width: 375.48px;
     /* height: 580px; */
     height: auto;
-    padding-bottom: 400px;
+    padding-top: 10px;
+    padding-bottom: 350px;
     /* display: none; */
 }
 
@@ -127,7 +128,7 @@
     position: relative;
 }
 
-.list ul li p {
+.list ul p {
     margin-left: 13px;
     font-family: 'SF Pro Text';
     font-style: normal;
